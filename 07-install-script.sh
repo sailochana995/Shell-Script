@@ -8,6 +8,8 @@ then
 
 echo "EORROR :: you must have sudo access to excut this script"
 
+exit 1
+
 fi
 
 dnf install mysqll -y
