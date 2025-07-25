@@ -2,7 +2,7 @@
 
         USERID$(id -u)
 
-        if [ $USERDID -ne 0 ]
+        if [ $USERID -ne 0 ]
 
         then
            echo "EORROR:: you must have suco access to execute this script"
@@ -48,7 +48,7 @@
          else
              echo "install GIT SUCCESSFULL"
 
-             
+
          fi
 
 
