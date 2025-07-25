@@ -10,7 +10,7 @@ if [ USERID$ -ne 0 ]
 
 fi
 
-        dnf install mysqll -y
+        dnf install mysql -y
         
 if   [ $? -ne 0 ]
 
