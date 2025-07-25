@@ -18,6 +18,8 @@ then
 
    echo "installing MySQL is failure..."
 
+   exit 1
+
 else 
 
     "installing MySQL is successful..."
