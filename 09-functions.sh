@@ -8,8 +8,16 @@ then
   dnf list installed mysql
   if [ $? -ne 0 ]
   then
-    dnf install mysql -y
+    dnf install mysqll -y
     echo "install MYSQL FAILURE..."
     else
      echo "install MYSQL SUCCESSFULL..."
       fi
+
+list installed git
+if [ $? -ne 0] then
+dnf install git -y
+echo "install git is failure..."
+else
+   echo "install git is succesfull...?
+   fi
