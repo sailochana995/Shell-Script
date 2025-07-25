@@ -14,7 +14,7 @@ then
      echo "install MYSQL SUCCESSFULL..."
       fi
 
-list installed git
+dnf list installed git
 if [ $? -ne 0] then
 dnf install git -y
 echo "install git is failure..."
