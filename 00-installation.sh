@@ -34,7 +34,7 @@ if [ $? -ne 0 ]
 
      echo "installing git... is failure"
   else
-    echo "installing git... is successful...?
+    echo "installing git... is successful"
 fi
    
 
