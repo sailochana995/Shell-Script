@@ -11,5 +11,5 @@ then
     dnf install mysql -y
     echo "install MYSQL FAILURE..."
     else
-      "install MYSQL SUCCESSFULL..."
+     echo "install MYSQL SUCCESSFULL..."
       fi
