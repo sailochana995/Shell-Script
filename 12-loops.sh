@@ -56,7 +56,7 @@ fi
      if [ $? -ne 0 ]
     then
       dnf install $packege -y &>>$LOG_FILE_NAME
-      VALIDATE $? "installing package"
+      VALIDATE $? "installing $package"
     else
       echo -e "package already... $Y INSTALLED $N"
     fi
