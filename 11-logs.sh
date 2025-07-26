@@ -5,6 +5,7 @@ USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
+N="/e[0m"
 LOGS_FOLDER="/var/log/shell-script-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
 # LOG_FOLDER=$(echo $0 | cut -d "." -f1 )this is for to cut .sh
@@ -15,10 +16,10 @@ VALIDATE(){
 
  if [ $? -ne 0 ]
 then 
-     echo -e "$2... $R FAILLED"
+     echo -e "$2... $R FAILLED $N"
      exit 1
 else
-     echo -e "$2... $G SUCCESSFULL"
+     echo -e "$2... $G SUCCESSFULL $N"
    fi
 
 }
@@ -38,7 +39,7 @@ then
      VALIDATE $? "installing mysql"
 
   else 
-      echo -e "mysql is allready... $Y INSTALLED"
+      echo -e "mysql is allready... $Y INSTALLED $N"
 fi
    
    dnf list installed git &>>$LOG_FILE_NAME
@@ -46,5 +47,5 @@ if [ $? -ne 0 ]
 then
      dnf install git -y &>>$LOG_FILE_NAME
     VALIDATE $? "installing git"
-  else  echo -e "git is already... $Y INSTALLED" 
+  else  echo -e "git is already... $Y INSTALLED $N" 
 fi
